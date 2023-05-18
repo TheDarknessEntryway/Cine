@@ -53,6 +53,12 @@
     <Compile Include="Filmes.Designer.cs">
       <DependentUpon>Filmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingressos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingressos.Designer.cs">
+      <DependentUpon>Ingressos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Filmes.resx">
       <DependentUpon>Filmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingressos.resx">
+      <DependentUpon>Ingressos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -98,6 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\editfront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film1edit2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film2edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film3edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editfront1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
