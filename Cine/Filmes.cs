@@ -16,5 +16,10 @@ namespace Cine
         {
             InitializeComponent();
         }
+
+        private void btnfechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

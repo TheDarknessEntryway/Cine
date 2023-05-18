@@ -16,5 +16,27 @@ namespace Cine
         {
             InitializeComponent();
         }
+
+
+          private void filmesmenu_Click(object sender, EventArgs e)
+        {
+            Filmes filmes = new Filmes();
+            filmes.MdiParent = this;
+            filmes.Show();
+        }
+
+        private void ingressosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ingressos ingressos = new Ingressos();
+            ingressos.MdiParent = this;
+            ingressos.Show();
+        }
+
+        private void acessoFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Acesso acesso = new Acesso();
+            acesso.MdiParent = this;
+            acesso.Show();
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cine
 {
-    public partial class Ingressos : Form
+    public partial class Acesso : Form
     {
-        public Ingressos()
+        public Acesso()
         {
             InitializeComponent();
         }

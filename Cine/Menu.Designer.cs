@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.iXORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filmesmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.ingressosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cardápioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acessoFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iXORToolStripMenuItem,
-            this.acessoToolStripMenuItem,
+            this.filmesmenu,
             this.ingressosToolStripMenuItem,
             this.cardápioToolStripMenuItem,
             this.acessoFuncionáriosToolStripMenuItem});
@@ -68,14 +68,15 @@
             this.iXORToolStripMenuItem.Size = new System.Drawing.Size(76, 28);
             this.iXORToolStripMenuItem.Text = "YXOR";
             // 
-            // acessoToolStripMenuItem
+            // filmesmenu
             // 
-            this.acessoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acessoToolStripMenuItem.ForeColor = System.Drawing.Color.Gold;
-            this.acessoToolStripMenuItem.Name = "acessoToolStripMenuItem";
-            this.acessoToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.acessoToolStripMenuItem.Size = new System.Drawing.Size(86, 28);
-            this.acessoToolStripMenuItem.Text = "Filmes";
+            this.filmesmenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filmesmenu.ForeColor = System.Drawing.Color.Gold;
+            this.filmesmenu.Name = "filmesmenu";
+            this.filmesmenu.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.filmesmenu.Size = new System.Drawing.Size(86, 28);
+            this.filmesmenu.Text = "Filmes";
+            this.filmesmenu.Click += new System.EventHandler(this.filmesmenu_Click);
             // 
             // ingressosToolStripMenuItem
             // 
@@ -85,6 +86,7 @@
             this.ingressosToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.ingressosToolStripMenuItem.Size = new System.Drawing.Size(103, 28);
             this.ingressosToolStripMenuItem.Text = "Ingressos";
+            this.ingressosToolStripMenuItem.Click += new System.EventHandler(this.ingressosToolStripMenuItem_Click);
             // 
             // cardápioToolStripMenuItem
             // 
@@ -107,17 +109,18 @@
             this.acessoFuncionáriosToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.acessoFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(161, 28);
             this.acessoFuncionáriosToolStripMenuItem.Text = "Acesso Funcionários";
+            this.acessoFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.acessoFuncionáriosToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
             // textBox1
@@ -146,7 +149,7 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar";
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,8 +158,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -169,7 +173,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem iXORToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acessoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filmesmenu;
         private System.Windows.Forms.ToolStripMenuItem ingressosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cardápioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acessoFuncionáriosToolStripMenuItem;
