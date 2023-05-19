@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnfechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +47,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnfechar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,6 +65,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1168, 37);
             this.panel1.TabIndex = 0;
+            // 
+            // btnfechar
+            // 
+            this.btnfechar.BackColor = System.Drawing.Color.Red;
+            this.btnfechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfechar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnfechar.Location = new System.Drawing.Point(1125, 7);
+            this.btnfechar.Name = "btnfechar";
+            this.btnfechar.Size = new System.Drawing.Size(27, 23);
+            this.btnfechar.TabIndex = 12;
+            this.btnfechar.Text = "X";
+            this.btnfechar.UseVisualStyleBackColor = false;
+            this.btnfechar.Click += new System.EventHandler(this.btnfechar_Click);
             // 
             // label1
             // 
@@ -122,7 +135,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(215, 429);
+            this.label2.Location = new System.Drawing.Point(215, 431);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 5;
@@ -247,19 +260,6 @@
             this.label7.Size = new System.Drawing.Size(21, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "16";
-            // 
-            // btnfechar
-            // 
-            this.btnfechar.BackColor = System.Drawing.Color.Red;
-            this.btnfechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfechar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnfechar.Location = new System.Drawing.Point(1125, 7);
-            this.btnfechar.Name = "btnfechar";
-            this.btnfechar.Size = new System.Drawing.Size(27, 23);
-            this.btnfechar.TabIndex = 12;
-            this.btnfechar.Text = "X";
-            this.btnfechar.UseVisualStyleBackColor = false;
-            this.btnfechar.Click += new System.EventHandler(this.btnfechar_Click);
             // 
             // Filmes
             // 
